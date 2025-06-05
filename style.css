@@ -28,17 +28,32 @@ header h1 {
   margin: 0;
   font-family: 'Playfair Display', serif;
 }
-
-/* === NAVIGATION === */
-nav {
-  margin-top: 0.5rem;
+/* Navigation Reset and Styling */
+nav ul {
+  list-style: none; /* 🔧 Removes bullets */
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  background-color: #2e2a69; /* Deep indigo for contrast */
 }
 
-nav a {
-  margin: 0 1rem;
-  color: white;
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
   font-weight: bold;
+  color: #ffffff; /* Bright white for visibility */
+  font-family: 'Source Sans Pro', sans-serif;
 }
+
+nav ul li a:hover {
+  color: #ffd700; /* Gold hover */
+}
+
+
 
 /* === MAIN CONTENT === */
 main {
