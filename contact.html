@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Dr. Doshie Piper</title>
+
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro&display=swap" rel="stylesheet" />
+  
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="media.html">Media</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Get in Touch</h1>
+    <p>Interested in booking Dr. Piper for a speaking engagement, learning more about her initiatives, collaborating, or sharing media inquiries? Use the form below to reach out.</p>
+  </header>
+
+  <main class="contact-container">
+
+    <section class="contact-form">
+      <form action="mailto:doshiepiper@gmail.com" method="post" enctype="text/plain">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="org">Organization (optional):</label>
+        <input type="text" id="org" name="org" />
+
+        <label for="inquiry">Inquiry Type:</label>
+        <select id="inquiry" name="inquiry">
+          <option>Speaking Engagement</option>
+          <option>Collaboration</option>
+          <option>Media Request</option>
+          <option>Student Inquiry</option>
+          <option>Other</option>
+        </select>
+
+        <label for="hear">How did you hear about my work?</label>
+        <input type="text" id="hear" name="hear" />
+
+        <input type="submit" value="Send Message" />
+      </form>
+    </section>
+
+    <aside class="contact-aside">
+      <img src="images/headshot-1.jpg" alt="Dr. Doshie Piper" />
+      <h3>Ways You Can Connect</h3>
+      <ul>
+        <li>Invite Dr. Piper to speak at your event</li>
+        <li>Propose a collaborative justice initiative</li>
+        <li>Request an interview or media appearance</li>
+        <li>Partner on a reentry or education project</li>
+      </ul>
+    </aside>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Dr. Doshie Piper | Built by Marcus Piper</p>
+  </footer>
+
+</body>
+</html>
