@@ -178,6 +178,7 @@ nav ul li a:hover {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -357,6 +358,61 @@ h2 {
   border-radius: 15px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
+
+/* === DIGITAL BUSINESS CARD / QR CODE === */
+.digital-card-section {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.digital-card-section h3 {
+  color: #2a2a6c;
+  margin-bottom: 1rem;
+}
+
+.qr-container {
+  background: white;
+  padding: 2rem;
+  text-align: center;
+  max-width: 300px;
+  margin: 0 auto;
+  border: 3px solid #f0f0f0;
+  box-shadow: 0 8px 32px rgba(42, 42, 108, 0.15);
+  transition: all 0.3s ease;
+}
+
+.qr-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(42, 42, 108, 0.25);
+  border-color: #ffd700;
+}
+
+.qr-label {
+  font-weight: bold;
+  color: #2a2a6c;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.qr-code-image {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  border-radius: 10px;
+  padding: 0.5rem;
+  background: white;
+}
+
+.qr-url {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 1rem;
+  font-family: monospace;
+  word-break: break-all;
+}
+
 
 /* === MEDIA/VIDEO GRID === */
 .video-grid {
