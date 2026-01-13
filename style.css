@@ -51,6 +51,7 @@ nav ul {
 
 nav ul li {
   display: inline-block;
+  flex-shrink: 0;
 }
 
 nav ul li a {
