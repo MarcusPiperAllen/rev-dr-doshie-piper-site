@@ -483,6 +483,19 @@ img {
   margin-bottom: 1rem;
 }
 
+.bio-image {
+  display: block;
+  margin: 0 auto 2rem auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.bio-image:hover {
+  transform: scale(1.02);
+}
+
+
 /* === FOOTER === */
 footer {
   text-align: center;
