@@ -576,16 +576,163 @@ h2 {
   color: #2a2a6c;
 }
 
+/* === PROJECTS PAGE DARK THEME === */
+.projects-page {
+  background: linear-gradient(180deg, 
+    #0f0f2e 0%, 
+    #1a1a4c 25%, 
+    #2a2a6c 50%, 
+    #3a3a8c 75%, 
+    #4a4a9c 100%);
+  min-height: 100vh;
+}
+
+.projects-page footer {
+  margin-top: 0;
+}
+
+.projects-header {
+  background: transparent;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.projects-header h1 {
+  color: #ffd700;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.projects-header p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.15rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.projects-main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* === GLASSMORPHISM PROJECT CARDS === */
+.glass-project {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  border-left: 4px solid #ffd700;
+  border-radius: 15px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.glass-project:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateX(8px);
+  box-shadow: 0 8px 30px rgba(255, 215, 0, 0.15);
+  border-color: rgba(255, 215, 0, 0.4);
+}
+
+.glass-project h2 {
+  color: #ffd700;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  margin: 0 0 1rem 0;
+}
+
+.glass-project p {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 0.75rem;
+  line-height: 1.7;
+}
+
+.glass-project p:last-child {
+  margin-bottom: 0;
+}
+
+.glass-project strong {
+  color: #ffd700;
+}
+
+.glass-project em {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+/* === UPCOMING WORK PREMIUM STYLING === */
+.upcoming-work {
+  border-left-width: 4px;
+  border-image: linear-gradient(180deg, #ffd700, #e6c200, #ffd700) 1;
+}
+
+.upcoming-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.upcoming-list li {
+  color: rgba(255, 255, 255, 0.95);
+  padding: 0.75rem 0;
+  padding-left: 2rem;
+  position: relative;
+  border-bottom: 1px solid rgba(255, 215, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.upcoming-list li:last-child {
+  border-bottom: none;
+}
+
+.upcoming-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(135deg, #ffd700, #e6c200);
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.5);
+}
+
+.upcoming-list li:hover {
+  padding-left: 2.5rem;
+}
+
+.upcoming-list li:hover::before {
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+}
+
+.upcoming-list strong {
+  color: #ffd700;
+}
+
+.upcoming-list em {
+  color: rgba(255, 255, 255, 0.95);
+}
+
 /* === CONSULTING & GRANT SERVICES SECTION === */
 .consulting-section {
-  background: linear-gradient(135deg, #1a1a4c 0%, #2a2a6c 50%, #3a3a8c 100%);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 215, 0, 0.3);
   border-radius: 20px;
   padding: 3rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
   margin-bottom: 2rem;
-  box-shadow: 0 8px 40px rgba(26, 26, 76, 0.3);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
   position: relative;
   overflow: hidden;
+}
+
+.projects-page .consulting-section {
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .consulting-section::before {
