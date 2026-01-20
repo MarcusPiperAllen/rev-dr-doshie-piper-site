@@ -4,6 +4,7 @@
 A static HTML/CSS personal portfolio website for Rev. Dr. Doshie Piper - Criminologist, Speaker, and Justice Advocate.
 
 ## Recent Changes
+- **Jan 2026**: Updated professional credentials - added Restorative Justice Coordinator role, updated affiliations (Collegium, MLK Commission), and new contact email
 - **Jan 2026**: Synchronized Projects page architecture with full dark indigo gradient theme, glassmorphism cards, and premium styling throughout
 - **Jan 2026**: Added high-end "Strategic Consulting & Grant Development" section to Projects page with premium service card design
 - **Jan 2026**: Added "2026 Engagement Highlights" section to Media page with horizontal card layout featuring MLK Youth Summit, Ella Austin Legacy Award, and DreamWeek Speaker images
