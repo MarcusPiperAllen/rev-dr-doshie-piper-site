@@ -998,6 +998,248 @@ html {
   scroll-behavior: smooth;
 }
 
+/* === SITE-WIDE DARK THEME === */
+.dark-page {
+  background: linear-gradient(180deg, 
+    #0f0f2e 0%, 
+    #1a1a4c 25%, 
+    #2a2a6c 50%, 
+    #3a3a8c 75%, 
+    #4a4a9c 100%);
+  min-height: 100vh;
+}
+
+.dark-page header h1,
+.dark-page main h2 {
+  color: #ffd700;
+}
+
+.dark-page p,
+.dark-page li {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.dark-page strong {
+  color: #ffd700;
+}
+
+.dark-page em {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.dark-page a {
+  color: #ffd700;
+}
+
+.dark-page a:hover {
+  color: #fff;
+}
+
+.dark-page footer {
+  margin-top: 0;
+}
+
+/* === DARK THEME GLASSMORPHISM BIO === */
+.dark-page .bio-section {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 215, 0, 0.25);
+  border-radius: 20px;
+  padding: 3rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.dark-page .bio-image {
+  border: 4px solid rgba(255, 215, 0, 0.4);
+  box-shadow: 0 8px 32px rgba(255, 215, 0, 0.15);
+}
+
+/* === DARK THEME VALUES SECTION === */
+.dark-page .values-section {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  border-radius: 20px;
+  padding: 2.5rem;
+  margin-top: 2rem;
+}
+
+.dark-page .values-section blockquote {
+  color: rgba(255, 255, 255, 0.9);
+  font-style: italic;
+  border-left: 4px solid #ffd700;
+  padding-left: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.dark-page .values-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dark-page .values-section ul li {
+  padding: 0.75rem 0;
+  padding-left: 2rem;
+  position: relative;
+  border-bottom: 1px solid rgba(255, 215, 0, 0.1);
+}
+
+.dark-page .values-section ul li:last-child {
+  border-bottom: none;
+}
+
+.dark-page .values-section ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(135deg, #ffd700, #e6c200);
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.5);
+}
+
+/* === DARK THEME EXPLORE CARDS === */
+.dark-page .explore-card {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.dark-page .explore-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 215, 0, 0.5);
+  box-shadow: 0 8px 30px rgba(255, 215, 0, 0.2);
+}
+
+.dark-page .explore-card h3 {
+  color: #ffd700;
+}
+
+.dark-page .explore-card p {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* === DARK THEME INTRO SECTION === */
+.dark-page .intro {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 215, 0, 0.15);
+  margin-bottom: 2rem;
+}
+
+.dark-page .intro h2 {
+  margin-top: 0;
+}
+
+/* === PREMIUM NEWS BADGE WITH GOLD GLOW === */
+.dark-page .news-badge {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 2px solid rgba(255, 215, 0, 0.4);
+  box-shadow: 
+    0 4px 30px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(255, 215, 0, 0.15),
+    inset 0 0 30px rgba(255, 215, 0, 0.05);
+  animation: goldPulse 3s ease-in-out infinite;
+}
+
+@keyframes goldPulse {
+  0%, 100% {
+    box-shadow: 
+      0 4px 30px rgba(0, 0, 0, 0.3),
+      0 0 40px rgba(255, 215, 0, 0.15),
+      inset 0 0 30px rgba(255, 215, 0, 0.05);
+  }
+  50% {
+    box-shadow: 
+      0 4px 30px rgba(0, 0, 0, 0.3),
+      0 0 60px rgba(255, 215, 0, 0.25),
+      inset 0 0 40px rgba(255, 215, 0, 0.08);
+  }
+}
+
+.dark-page .news-label {
+  box-shadow: 0 2px 15px rgba(255, 215, 0, 0.5);
+}
+
+/* === DARK THEME CONTACT PAGE === */
+.dark-page .contact-container {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.dark-page .contact-info h2,
+.dark-page .contact-info h3,
+.dark-page .digital-card-section h3 {
+  color: #ffd700;
+}
+
+.dark-page .contact-card {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 215, 0, 0.25);
+}
+
+.dark-page .contact-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 215, 0, 0.5);
+  box-shadow: 0 8px 30px rgba(255, 215, 0, 0.15);
+}
+
+.dark-page .contact-card h3 {
+  color: #ffd700;
+}
+
+.dark-page .contact-options ul li::before {
+  color: #ffd700;
+  text-shadow: 0 0 8px rgba(255, 215, 0, 0.5);
+}
+
+/* === QR CODE WHITE GLASS CARD FOR DARK THEME === */
+.dark-page .qr-container {
+  background: rgba(255, 255, 255, 0.95);
+  border: 3px solid #ffd700;
+  box-shadow: 
+    0 8px 40px rgba(0, 0, 0, 0.3),
+    0 0 30px rgba(255, 215, 0, 0.2);
+}
+
+.dark-page .qr-container:hover {
+  box-shadow: 
+    0 12px 50px rgba(0, 0, 0, 0.4),
+    0 0 40px rgba(255, 215, 0, 0.3);
+}
+
+.dark-page .qr-label {
+  color: #1a1a4c;
+}
+
+.dark-page .qr-url {
+  color: #3a3a8c;
+}
+
+.dark-page .contact-aside img {
+  border: 3px solid rgba(255, 215, 0, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* === DARK THEME CTA SECTION === */
+.dark-page .cta-section {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+}
+
 /* === BUTTON STYLES === */
 button,
 input[type="submit"] {
