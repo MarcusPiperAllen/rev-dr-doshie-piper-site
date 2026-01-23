@@ -4,6 +4,7 @@
 A static HTML/CSS personal portfolio website for Rev. Dr. Doshie Piper - Criminologist, Speaker, and Justice Advocate.
 
 ## Recent Changes
+- **Jan 2026**: Phase 2 MLK Commission Media Gallery - Added new 3-card "MLK Commission Signature Events" section featuring Gabby Douglas Keynote, City-Wide Interfaith Service, and Gospel Heritage Celebration with Melvin Crispell III
 - **Jan 2026**: Sophisticated Page Harmonization - Light pages (Media, Publications) styled with gold accents, off-white glass cards, indigo headings, and indigo glow on images/videos
 - **Jan 2026**: Fixed button contrast - ensured all CTA buttons have dark text (#0f0f2e) on yellow backgrounds with subtle text shadow for readability
 - **Jan 2026**: Site-wide Premium Dark Theme - applied unified dark indigo gradient (#0f0f2e to #4a4a9c) to Home, About, and Contact pages with glassmorphism components and gold accents
