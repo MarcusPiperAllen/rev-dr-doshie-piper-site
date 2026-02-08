@@ -28,6 +28,6 @@ class CleanURLHandler(http.server.SimpleHTTPRequestHandler):
         return super().do_GET()
 
 if __name__ == "__main__":
-    with socketserver.TCPServer(("0.0.0.0", PORT), CleanURLHandler) as httpd:
-        print(f"Serving at http://0.0.0.0:{PORT}")
+    with socketserver.TCPServer(("127.0.0.1", PORT), CleanURLHandler) as httpd:
+        print(f"Serving at http://127.0.0.1:{PORT}")
         httpd.serve_forever()
